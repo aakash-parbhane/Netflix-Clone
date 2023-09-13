@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My List - Netflix Clone</title>
+    <style>
+                body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: transparent;
+        }
+
+        .header .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .header .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .header .nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .my-list {
+            background-color: #000;
+            color: white;
+            padding: 20px;
+        }
+
+        .my-list h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .my-list-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .my-list-item img {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        .my-list-item h2 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #111;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Netflix Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="n&p.html">New & Popular</a></li>
+                <li><a href="mylist.html">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="my-list">
+        <h1>My List</h1>
+        <div class="my-list-item">
+            <img src="movie1.jpg" alt="Movie 1">
+            <h2>MOTU PATLU - Kung Fu Kings</h2>
+        </div>
+        <div class="my-list-item">
+            <img src="movie2.jpg" alt="Movie 2">
+            <h2>Taare Zameen Par</h2>
+        </div>
+    </section>
+
+
+    <script>
+
+        const myListItem = document.querySelectorAll('.my-list-item');
+
+        myListItem.forEach((item, index) => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateX(-20px)';
+            item.style.transition = `opacity 0.5s ${index * 0.2}s, transform 0.5s ${index * 0.2}s`;
+
+            setTimeout(() => {
+                item.style.opacity = '1';
+                item.style.transform = 'translateX(0)';
+            }, 500);
+        });
+    </script>
+    <section class="footer">
+        <p>&copy; 2023 Netflix My List Clone | AAKASH PARBHANE</p>
+    </section>
+</body>
+</html>

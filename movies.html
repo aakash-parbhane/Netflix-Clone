@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Movies</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: transparent;
+        }
+
+        .header .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .header .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .header .nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .movies-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px 5%;
+        }
+
+        .movie-card {
+            width: 250px;
+            background-color: #333;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #111;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Netflix Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="n&p.html">New & Popular</a></li>
+                <li><a href="mylist.html">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="movies-container">
+        <!-- Add movie cards here -->
+        <div class="movie-card">
+            <img src="movie1.jpg" alt="Movie 1">
+        </div>
+        <div class="movie-card">
+            <img src="movie2.jpg" alt="Movie 2">
+        </div>
+        <div class="movie-card">
+            <img src="movie3.jpg" alt="Movie 3">
+        </div>
+        <div class="movie-card">
+            <img src="movie4.jpg" alt="Movie 4">
+        </div>
+        <div class="movie-card">
+            <img src="movie5.jpg" alt="Movie 5">
+        </div>
+        <div class="movie-card">
+            <img src="movie6.jpg" alt="Movie 6">
+        </div>
+        <div class="movie-card">
+            <img src="movie7.jpg" alt="Movie 7">
+        </div>
+        <div class="movie-card">
+            <img src="movie8.jpg" alt="Movie 8">
+        </div>
+        <!-- Add more movie cards as needed -->
+    </div>
+
+    <section class="footer">
+        <p>&copy; 2023 Netflix Movies Clone | AAKASH PARBHANE</p>
+    </section>
+</body>
+</html>

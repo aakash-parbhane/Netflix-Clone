@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New & Popular - Netflix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: transparent;
+        }
+
+        .header .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .header .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .header .nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .new-popular {
+            background-color: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .new-popular h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .movie-card {
+            background-color: #222;
+            color: white;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: auto;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #111;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Netflix Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="n&p.html">New & Popular</a></li>
+                <li><a href="mylist.html">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="new-popular">
+        <h2>New & Popular</h2>
+        <div class="movie-list">
+            <!-- Sample movie cards (you can add more) -->
+            <div class="movie-card">
+                <img src="movie1.jpg" alt="Movie 1">
+                <h3>MOTU PATLU - Kung Fu Kings</h3>
+                <p>Category: Action</p>
+            </div>
+            <div class="movie-card">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h3>Taare Zameen Par</h3>
+                <p>Category:Family Drama</p>
+            </div>
+            <div class="movie-card">
+                <img src="movie3.jpg" alt="Movie 3">
+                <h3>Chor Nikal Ke Bhaga </h3>
+                <p>Category: Thriller/Crime</p>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>&copy; 2023 Netflix New and Popular Clone | AAKASH PARBHANE</p>
+    </section>
+</body>
+</html>
